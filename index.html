@@ -27,29 +27,43 @@
                 <strong>Pour l'installation,</strong>
                 <br>
                 <div>En utilisant npm:</div>
+                <br>
                 <pre><code>npm install -g sass</code></pre>
                 <div>Pour Mac OS/Linux (Homebrew):</div>
+                <br>
                 <pre><code>brew install sass/sass/sass</code></pre>
                 
                 <p>Il existe aussi des applications dans lesquelles Sass est intégré. </p>
                 <br>
                 <div><strong>Pour l'utilisation,</strong></div>
                 <div>En général, le Sass est utilisé pour manager des stylesheets très grandes, par exemple, celui-ci de Bootstrap. Donc la première étape, c'est d'importer le document css initial.</div>
+                <br>
                 <pre><code>@import "../node_modules/bootstrap/scss/bootstrap";</code></pre>
                 <div>Ensuite, on peut ajouter nos propres codes sass.</div>
                 <div>Enfin, pour compiler sass à css,</div>
                 <pre><code>sass input.scss output.css</code></pre>
                 <div>On peut aussi ajouter -watch après sass qui permet de re-compiler le CSS lorsqu'on sauvegarde le Sass</div>
-                <img src="pics/ex1.jpg"></img>
+                <img src="pics/ex1.jpg" class="img-fluid">
 
             </div>
             <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
-                <h2 ></h2>
-                <p>...</p>
+                <h4 >Variables</h4>
+                <div>Dans Sass, on peut définir des variables pour stocker des informations</div>
+                <img src="/pics/Variable.jpg" class="img-fluid">
+                <h4>Nesting</h4>
+                <div>L'écriture de Sass ressemble beaucoup à celle-ci de html: c'est une structure assez hierharchique.</div>
+                <img src="/pics/nesting.jpg" class="img-fluid">
+                
             </div>
             <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">
+                <h4>Modules</h4>
+                <img src="/pics/Module.jpg" class="img-fluid">
+                <h4>Mixins</h4>
+                <div>Les Mixins permettent de simplifier l'écriture de CSS en utilisant des fonctions d'argument personnalisées et fonctions de boucle</div>
+                <img src="/pics/Mixin1.jpg" class="img-fluid">
+                <img src="/pics/Mixin2.jpg" class="img-fluid">
+                <img src="/pics/Mixin3.jpg" class="img-fluid">
 
-                <p>...</p>
             </div>
           </div>
         <br>
