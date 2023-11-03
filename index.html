@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Sass Presentation</title>
+        <link href="main.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Présentation de Sass</h1>
+        <br>
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Introduction</button>
+              <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Installation&Utilisation</button>
+              <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Nesting</button>
+              <button class="nav-link" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false" >Mixin</button>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                <h3>Sass = Syntactically Awesome Stylesheets</h3>
+                <img src="/pics/sass.svg" class="img-fluid" alt="...">
+                <img src="/pics/sasscss.jpg" class="img-fluid" alt="...">
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                <div>L'installation et l'utilisation des documents sass sont tous faites dans la commande.</div>
+                <strong>Pour l'installation,</strong>
+                <br>
+                <div>En utilisant npm:</div>
+                <pre><code>npm install -g sass</code></pre>
+                <div>Pour Mac OS/Linux (Homebrew):</div>
+                <pre><code>brew install sass/sass/sass</code></pre>
+                
+                <p>Il existe aussi des applications dans lesquelles Sass est intégré. </p>
+                <br>
+                <div><strong>Pour l'utilisation,</strong></div>
+                <div>En général, le Sass est utilisé pour manager des stylesheets très grandes, par exemple, celui-ci de Bootstrap. Donc la première étape, c'est d'importer le document css initial.</div>
+                <pre><code>@import "../node_modules/bootstrap/scss/bootstrap";</code></pre>
+                <div>Ensuite, on peut ajouter nos propres codes sass.</div>
+                <div>Enfin, pour compiler sass à css,</div>
+                <pre><code>sass input.scss output.css</code></pre>
+                <div>On peut aussi ajouter -watch après sass qui permet de re-compiler le CSS lorsqu'on sauvegarde le Sass</div>
+                <img src="pics/ex1.jpg"></img>
+
+            </div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+                <h2 ></h2>
+                <p>...</p>
+            </div>
+            <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">
+
+                <p>...</p>
+            </div>
+          </div>
+        <br>
+        <em> Cette présentation est basée sur les documents suivants : </em>
+        <a href="https://sass-lang.com/guide/">Sass Basics</a> &nbsp
+        <a href="https://getbootstrap.com/docs/5.3/customize/sass/">Bootstrap-Sass</a> &nbsp
+        <a href="https://fr.wikipedia.org/wiki/Sass_(langage)">Sass-wikipedia-fr</a> &nbsp
+        <a href="https://zh.wikipedia.org/zh-cn/Sass">Sass-wikipedia-cn</a>
+        <div class="jumbotron">
+            <h1 class="display-4">Merci pour votre attention!</h1>
+        </div>
+        <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
