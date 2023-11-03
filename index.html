@@ -7,8 +7,45 @@
     </head>
     <body>
         <h1>Présentation de Sass</h1>
-        <em>Cette présentation est basée sur les deux documents suivants : </em>
-        <a href="https://sass-lang.com/guide/">Sass Basics</a>
-        <a href="https://getbootstrap.com/docs/5.3/customize/sass/">Bootstrap-Sass</a>
+        <br>
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
+              <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
+              <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
+              <button class="nav-link" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false" disabled>Disabled</button>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                <h2>Introduction</h2>
+                <h3>Sass = Syntactically Awesome Stylesheets</h3>
+                <img src="/pics/sass.svg" class="img-fluid" alt="...">
+                <img src="/pics/sasscss.jpg" class="img-fluid" alt="...">
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                
+            </div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">...</div>
+            <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">...</div>
+          </div>
+        &nbsp&nbsp<em> Cette présentation est basée sur les documents suivants : </em>
+        <a href="https://sass-lang.com/guide/">Sass Basics</a> &nbsp
+        <a href="https://getbootstrap.com/docs/5.3/customize/sass/">Bootstrap-Sass</a> &nbsp
+        <a href="https://fr.wikipedia.org/wiki/Sass_(langage)">Sass-wikipedia-fr</a> &nbsp
+        <a href="https://zh.wikipedia.org/zh-cn/Sass">Sass-wikipedia-cn</a>
+        <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+
+            <h2 id="scrollspyHeading2">Installation</h2>
+            <p>...</p>
+            <h2 id="scrollspyHeading3">Nesting</h2>
+            <p>...</p>
+            <h2 id="scrollspyHeading4">Mixin</h2>
+            <p>...</p>
+          </div>
+        <div class="jumbotron">
+            <h1 class="display-4">Merci pour votre attention!</h1>
+        </div>
+        <script src="index.js"></script>
     </body>
 </html>
