@@ -3,10 +3,11 @@
 $wordcolor:red;
 $bgcolor:grey;
 $position:center;
+$fontsize:larger;
 
 
 .code{
     text-align:$position;
-    font-size:larger;
+    font-size:$fontsize;
     color:$wordcolor;
 }
