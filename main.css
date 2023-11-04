@@ -11855,13 +11855,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.nav-link active {
-  color: red;
-}
-
-code {
-  font-size: larger;
+.code {
   text-align: center;
+  font-size: larger;
+  color: red;
 }
 
 /*# sourceMappingURL=main.css.map */

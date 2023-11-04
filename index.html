@@ -6,73 +6,82 @@
         <link href="main.css" rel="stylesheet">
     </head>
     <body>
-        <h1>Présentation de Sass</h1>
+        <h1 class="text-center">Présentation de Sass</h1>
         <br>
-        <nav>
+        <nav class="nav justify-content-center">
             <div class="nav nav-tabs" id="nav-tab" role="tablist">
-              <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Introduction</button>
-              <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Installation&Utilisation</button>
-              <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Nesting</button>
-              <button class="nav-link" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false" >Mixin</button>
+                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Introduction</button>
+                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Installation&Utilisation</button>
+                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Nesting</button>
+                <button class="nav-link" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false" >Mixin</button>
+                <button class="nav-link" id="nav-lesautres-tab" data-bs-toggle="tab" data-bs-target="#nav-lesautres" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false" >Others</button>
             </div>
-          </nav>
+         </nav>
           <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
-                <h3>Sass = Syntactically Awesome Stylesheets</h3>
-                <img src="/pics/sass.svg" class="img-fluid" alt="...">
-                <img src="/pics/sasscss.jpg" class="img-fluid" alt="...">
+                <h3 class="text-center">Sass = Syntactically Awesome Stylesheets</h3>
+                <div align="center">
+                    <img src="/pics/sass.svg" class="img-fluid" alt="...">
+                </div> 
+                <div align="center">
+                    <img src="/pics/sasscss.jpg" class="img-fluid" alt="...">
+                </div>
             </div>
             <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
                 <div>L'installation et l'utilisation des documents sass sont tous faites dans la commande.</div>
-                <strong>Pour l'installation,</strong>
-                <br>
+                <h4>Pour l'installation,</h4>
                 <div>En utilisant npm:</div>
                 <br>
-                <pre><code>npm install -g sass</code></pre>
+                <div class="code"><code>npm install -g sass</code></div>
                 <div>Pour Mac OS/Linux (Homebrew):</div>
                 <br>
-                <pre><code>brew install sass/sass/sass</code></pre>
+                <div class="code"><code>brew install sass/sass/sass</code></div>
                 
                 <p>Il existe aussi des applications dans lesquelles Sass est intégré. </p>
                 <br>
-                <div><strong>Pour l'utilisation,</strong></div>
+                <h4>Pour l'utilisation,</h4>
                 <div>En général, le Sass est utilisé pour manager des stylesheets très grandes, par exemple, celui-ci de Bootstrap. Donc la première étape, c'est d'importer le document css initial.</div>
                 <br>
-                <pre><code>@import "../node_modules/bootstrap/scss/bootstrap";</code></pre>
+                <div class="code"><code>@import "../node_modules/bootstrap/scss/bootstrap";</code></div>
                 <div>Ensuite, on peut ajouter nos propres codes sass.</div>
                 <div>Enfin, pour compiler sass à css,</div>
-                <pre><code>sass input.scss output.css</code></pre>
+                <div class="code"><code>sass input.scss output.css</code></div>
                 <div>On peut aussi ajouter --watch après sass qui permet de re-compiler le CSS lorsqu'on sauvegarde le Sass</div>
                 <img src="pics/ex1.jpg" class="img-fluid">
 
             </div>
             <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
-                <h4 >Variables</h4>
-                <div>Dans Sass, on peut définir des variables pour stocker des informations</div>
-                <img src="/pics/Variable.jpg" class="img-fluid">
                 <h4>Nesting</h4>
                 <div>L'écriture de Sass ressemble beaucoup à celle-ci de html: c'est une structure assez hierharchique.</div>
                 <img src="/pics/nesting.jpg" class="img-fluid">
-                
             </div>
-            <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">
-                <h4>Modules</h4>
-                <img src="/pics/Module.jpg" class="img-fluid">
+            <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">          
                 <h4>Mixins</h4>
                 <div>Les Mixins permettent de simplifier l'écriture de CSS en utilisant des fonctions d'argument personnalisées et fonctions de boucle</div>
                 <img src="/pics/Mixin1.jpg" class="img-fluid">
                 <img src="/pics/Mixin2.jpg" class="img-fluid">
                 <img src="/pics/Mixin3.jpg" class="img-fluid">
-
+            </div>
+            <div class="tab-pane fade" id="nav-lesautres" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">
+                <h4 >Variables</h4>
+                <div>Dans Sass, on peut définir des variables pour stocker des informations</div>
+                <img src="/pics/Variable.jpg" class="img-fluid">
+                <h4>Modules</h4>
+                <img src="/pics/Module.jpg" class="img-fluid">
+                <h4>Operators</h4>
+                <img src="/pics/operator1.png" class="img-fluid">
+                <img src="/pics/operator2.png" class="img-fluid">
             </div>
           </div>
         <br>
-        <em> Cette présentation est basée sur les documents suivants : </em>
-        <a href="https://sass-lang.com/guide/">Sass Basics</a> &nbsp
-        <a href="https://getbootstrap.com/docs/5.3/customize/sass/">Bootstrap-Sass</a> &nbsp
-        <a href="https://fr.wikipedia.org/wiki/Sass_(langage)">Sass-wikipedia-fr</a> &nbsp
-        <a href="https://zh.wikipedia.org/zh-cn/Sass">Sass-wikipedia-cn</a>
-        <div class="jumbotron">
+        <div align="center">
+            <em> Cette présentation est basée sur les documents suivants : </em>
+            <a href="https://sass-lang.com/guide/">Sass Basics</a> &nbsp
+            <a href="https://getbootstrap.com/docs/5.3/customize/sass/">Bootstrap-Sass</a> &nbsp
+            <a href="https://fr.wikipedia.org/wiki/Sass_(langage)">Sass-wikipedia-fr</a> &nbsp
+            <a href="https://zh.wikipedia.org/zh-cn/Sass">Sass-wikipedia-cn</a>
+        </div>
+        <div class="text-center">
             <h1 class="display-4">Merci pour votre attention!</h1>
         </div>
         <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

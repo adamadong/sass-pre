@@ -1,9 +1,12 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-.nav-link active {
-    color: red;
-}
-code {
-    font-size: larger;
-    text-align: center;
+$wordcolor:red;
+$bgcolor:grey;
+$position:center;
+
+
+.code{
+    text-align:$position;
+    font-size:larger;
+    color:$wordcolor;
 }
